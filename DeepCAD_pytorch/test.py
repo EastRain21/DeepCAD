@@ -53,12 +53,12 @@ model_path = opt.pth_path+'//'+opt.denoise_model
 model_list = list(os.walk(model_path, topdown=False))[-1][-1]
 # print(model_list)
 
-for i in range(len(model_list)):
-    aaa = model_list[i]
-    if '.yaml' in aaa:
-        yaml_name = model_list[i]
-print(yaml_name)
-read_yaml(opt, model_path+'//'+yaml_name)
+# for i in range(len(model_list)):
+#     aaa = model_list[i]
+#     if '.yaml' in aaa:
+#         yaml_name = model_list[i]
+# print(yaml_name)
+# read_yaml(opt, model_path+'//'+yaml_name)
 # print(opt.datasets_folder)
 
 name_list, noise_img, coordinate_list= test_preprocess_lessMemoryNoTail(opt)
